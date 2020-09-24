@@ -6,6 +6,9 @@ public class SimpleItemValidator implements ItemValidator {
 
     @Override
     public boolean isItemValid(Item item) {
-        return false;
+
+        if((item.getId() > 0)  && (item.getName() != null) && (item.getName().length() > 0) && (item.getPrice() > 0))
+            return true;
+        else return false;
     }
 }

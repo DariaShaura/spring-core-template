@@ -1,5 +1,7 @@
 package com.epam.edu.spring.core.template.entity;
 
-public enum Color {
+import java.util.Random;
 
+public enum Color {
+    WHITE, GREEN, BLUE, RED, YELLOW
 }
